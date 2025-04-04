@@ -30,7 +30,7 @@ def nerest_gym(request):
     except (TypeError , ValueError):
         return Response ({'error': 'Invalid entry(check latitude and longitude)'},status=400)
     
-    SerpApiKey = "4aa1696e8aa4421b04536616e86e6c004c561dbb907103d8275c445d86ec485e"
+    SerpApiKey = "" #we need to serp Api Key
     url = "https://serpapi.com/search.json"
 
     params = {
